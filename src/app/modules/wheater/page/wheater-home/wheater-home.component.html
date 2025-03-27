@@ -14,8 +14,11 @@
         size="lg"
         class="search-icon"
         [icon]="searchIcon"
-      >
-      </fa-icon>
+      ></fa-icon>
     </span>
   </form>
 </div>
+
+@if (weatherDatas) {
+  <app-weather-card [weatherDatasInput]="weatherDatas"></app-weather-card>
+}

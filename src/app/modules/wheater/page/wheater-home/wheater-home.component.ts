@@ -5,13 +5,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { WheaterService } from '../../services/wheater.service';
 import { WeatherDatas } from '../../../../models/interfaces/weather-datas.interface';
+import { WeatherCardComponent } from "../../components/weather-card/weather-card.component";
 
 @Component({
   selector: 'app-wheater-home',
   imports: [
-    FormsModule, 
+    FormsModule,
     FontAwesomeModule,
-  ],
+    WeatherCardComponent
+],
   templateUrl: './wheater-home.component.html',
 })
 export class WheaterHomeComponent implements OnInit, OnDestroy {
